@@ -32,6 +32,11 @@ describe('UserAge', () => {
   test('mercuryLifeExpect() returns change earthLifeExpect * 365 / 88 rounded', () => {
     const newUserAge = new UserAge("john", 42, 74);
     expect(newUserAge.mercuryLifeExpect()).toEqual(306);
-});
+  });
+
+  test('venusLifeExpect() returns change earthLifeExpect * 365 / 88 rounded', () => {
+    const newUserAge = new UserAge("john", 42, 74);
+    expect(newUserAge.venusLifeExpect()).toEqual(120);
+  });
 
 });
