@@ -1,4 +1,4 @@
-import age from '../src/js/scripts.js'
+import UserAge from './../src/js/scripts.js'
 
 describe('UserAge', () => {
 
