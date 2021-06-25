@@ -27,4 +27,9 @@ describe('UserAge', () => {
     const newUserAge = new UserAge();
     expect(newUserAge.marsAge()).toEqual(22);
   });
+
+  test('jupiterAge() returns earthAge * 365 / 4300 rounded', () => {
+    const newUserAge = new UserAge();
+    expect(newUserAge.jupiterAge()).toEqual(3);
+  });
 });
