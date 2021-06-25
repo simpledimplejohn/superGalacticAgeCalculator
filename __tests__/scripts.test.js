@@ -12,7 +12,10 @@ describe('UserAge', () => {
       newUser: "John",   
       earthAge: 42,   
     })
-
   })
+  test('mercuryAge() returns change earthAge * 0.24 rounded', () => {
+      const newUserAge = new UserAge();
+      expect(newUserAge.mercuryAge()).toEqual(174);
+  });
 
 });
