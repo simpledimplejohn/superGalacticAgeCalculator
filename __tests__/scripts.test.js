@@ -34,9 +34,14 @@ describe('UserAge', () => {
     expect(newUserAge.mercuryLifeExpect()).toEqual(306);
   });
 
-  test('venusLifeExpect() returns change earthLifeExpect * 365 / 88 rounded', () => {
+  test('venusLifeExpect() returns change earthLifeExpect * 365 / 225 rounded', () => {
     const newUserAge = new UserAge("john", 42, 74);
     expect(newUserAge.venusLifeExpect()).toEqual(120);
+  });
+
+  test('marsLifeExpect() returns change earthLifeExpect * 365 / 687 rounded', () => {
+    const newUserAge = new UserAge("john", 42, 74);
+    expect(newUserAge.marsLifeExpect()).toEqual(39);
   });
 
 });

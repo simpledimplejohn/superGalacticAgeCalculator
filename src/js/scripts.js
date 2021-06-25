@@ -31,6 +31,10 @@ export default class UserAge {
     return Math.floor(this.earthAge * (365 / 687));
   }
 
+  marsLifeExpect () {
+    return Math.floor(this.earthLifeExpect * (365 / 687))
+  }
+
   jupiterAge () {
     return Math.floor(this.earthAge * (365 / 4300));
   }
