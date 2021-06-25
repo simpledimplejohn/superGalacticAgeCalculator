@@ -14,10 +14,10 @@ describe('UserAge', () => {
       expect(newUserAge.mercuryAge()).toEqual(174);
   });
 
-  // test('venusAge() returns earthAge * 365 / 225 rounded', () => {
-  //   const newUserAge = new UserAge();
-  //   expect(newUserAge.venusAge()).toEqual(68);
-  // });
+  test('venusAge() returns earthAge * 365 / 225 rounded', () => {
+    const newUserAge = new UserAge("john", 42, 74);
+    expect(newUserAge.venusAge()).toEqual(68);
+  });
 
   // test('marsAge() returns earthAge * 365 / 687 rounded', () => {
   //   const newUserAge = new UserAge();
