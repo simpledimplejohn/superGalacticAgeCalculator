@@ -13,9 +13,13 @@ describe('UserAge', () => {
       earthAge: 42,   
     })
   })
-  test('mercuryAge() returns change earthAge * 0.24 rounded', () => {
+  test('mercuryAge() returns change earthAge * 365 / 88 rounded', () => {
       const newUserAge = new UserAge();
       expect(newUserAge.mercuryAge()).toEqual(174);
   });
 
+  test('venusAge() returns earthAge * 365 / 225 rounded', () => {
+    const newUserAge = new UserAge();
+    expect(newUserAge.venusAge()).toEqual(68);
+  });
 });

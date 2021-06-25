@@ -9,4 +9,8 @@ export default class UserAge {
   mercuryAge () {
     return Math.floor(this.earthAge * (365 / 88));
   }
+
+  venusAge () {
+    return Math.floor(this.earthAge * (365 / 225));
+  }
 }
