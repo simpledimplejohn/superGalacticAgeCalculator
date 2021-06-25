@@ -8,19 +8,11 @@ describe('UserAge', () => {
     expect(newUserAge.userName).toEqual("john")
   });
 
-  // test('add user age properties', () => {
-  //   const newUserAge = new UserAge();
-  //   expect(newUserAge).toEqual({
-  //     newUser: "John",   
-  //     earthAge: 42,
-  //     earthLifeExpect: 74,
 
-  //   })
-  // })
-  // test('mercuryAge() returns change earthAge * 365 / 88 rounded', () => {
-  //     const newUserAge = new UserAge();
-  //     expect(newUserAge.mercuryAge()).toEqual(174);
-  // });
+  test('mercuryAge() returns change earthAge * 365 / 88 rounded', () => {
+      const newUserAge = new UserAge("john", 42, 74);
+      expect(newUserAge.mercuryAge()).toEqual(174);
+  });
 
   // test('venusAge() returns earthAge * 365 / 225 rounded', () => {
   //   const newUserAge = new UserAge();
