@@ -3,14 +3,19 @@ console.log("scripts!");
 
 
 export default class UserAge {
-  constructor () {
-    this.newUser = "John";
-    this.earthAge = 42;
-    this.earthLifeExpect = 74;
+  constructor (userName, earthAge, earthLifeExpect) {
+    this.userName = userName;
+    this.earthAge = earthAge;
+    this.earthLifeExpect = earthLifeExpect;
+    
   }
 
   mercuryAge () {
-    return Math.floor(this.earthAge * (365 / 88));
+    return Math.floor(earthAge * (365 / 88));
+  }
+
+  mercuryLifeExpect () {
+    return Math.floor(earthAge * (356/88))
   }
 
   venusAge () {
