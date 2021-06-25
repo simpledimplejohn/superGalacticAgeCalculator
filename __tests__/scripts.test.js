@@ -11,7 +11,7 @@ describe('UserAge', () => {
     expect(newUserAge).toEqual({
       newUser: "John",   
       earthAge: 42,
-      earthLifeExpect = 74,
+      earthLifeExpect: 74,
 
     })
   })
@@ -35,14 +35,4 @@ describe('UserAge', () => {
     expect(newUserAge.jupiterAge()).toEqual(3);
   });
 
-  test('randomLifeExpectancy returns a value between 50 and 124 rounded', () => {
-    const newUserAge = new UserAge();
-    for (let i = 0; i < 200; i++) {
-      const age = newUserAge.randomLifeExpectancy();
-      expect(age).toBeGreaterThanOrEqual(50);
-      expect(age).toBeLessThanOrEqual(124);
-    }
-    
-    
-  })
 });
