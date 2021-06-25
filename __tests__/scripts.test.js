@@ -32,4 +32,9 @@ describe('UserAge', () => {
     const newUserAge = new UserAge();
     expect(newUserAge.jupiterAge()).toEqual(3);
   });
+
+  test('lifeExpectancy returns a value between 0 and 124 rounded', () => {
+    const newUserAge = new UserAge();
+    expect(newUserAge.lifeExpectancy()).toEqual(20);
+  })
 });
