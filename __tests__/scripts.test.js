@@ -10,7 +10,9 @@ describe('UserAge', () => {
     const newUserAge = new UserAge();
     expect(newUserAge).toEqual({
       newUser: "John",   
-      earthAge: 42,   
+      earthAge: 42,
+      earthLifeExpect = 74,
+
     })
   })
   test('mercuryAge() returns change earthAge * 365 / 88 rounded', () => {
@@ -33,8 +35,14 @@ describe('UserAge', () => {
     expect(newUserAge.jupiterAge()).toEqual(3);
   });
 
-  test('lifeExpectancy returns a value between 0 and 124 rounded', () => {
+  test('randomLifeExpectancy returns a value between 50 and 124 rounded', () => {
     const newUserAge = new UserAge();
-    expect(newUserAge.lifeExpectancy()).toEqual(20);
+    for (let i = 0; i < 200; i++) {
+      const age = newUserAge.randomLifeExpectancy();
+      expect(age).toBeGreaterThanOrEqual(50);
+      expect(age).toBeLessThanOrEqual(124);
+    }
+    
+    
   })
 });
