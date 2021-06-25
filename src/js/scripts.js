@@ -6,7 +6,7 @@ export default class UserAge {
   constructor (userName, earthAge, earthLifeExpect) {
     this.userName = userName;
     this.earthAge = earthAge;
-    this.earthLifeExpect = earthLifeExpect;
+    this.earthLifeExpect = 74;
     
   }
 
@@ -14,9 +14,10 @@ export default class UserAge {
     return Math.floor(this.earthAge * (365 / 88));
   }
 
-  mercuryLifeExpect () {
-    return Math.floor(this.earthAge * (356/88))
+  mercuryLifeExpect (){
+    return Math.floor(this.earthLifeExpect * (365 / 88));
   }
+
 
   venusAge () {
     return Math.floor(this.earthAge * (365 / 225));
@@ -29,5 +30,6 @@ export default class UserAge {
   jupiterAge () {
     return Math.floor(this.earthAge * (365 / 4300));
   }
+  
   
 }

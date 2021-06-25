@@ -29,5 +29,9 @@ describe('UserAge', () => {
     expect(newUserAge.jupiterAge()).toEqual(3);
   });
 
+  test('mercuryLifeExpect() returns change earthLifeExpect * 365 / 88 rounded', () => {
+    const newUserAge = new UserAge("john", 42, 74);
+    expect(newUserAge.mercuryLifeExpect()).toEqual(306);
+});
 
 });
