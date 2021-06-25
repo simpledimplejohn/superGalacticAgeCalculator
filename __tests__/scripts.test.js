@@ -19,15 +19,15 @@ describe('UserAge', () => {
     expect(newUserAge.venusAge()).toEqual(68);
   });
 
-  // test('marsAge() returns earthAge * 365 / 687 rounded', () => {
-  //   const newUserAge = new UserAge();
-  //   expect(newUserAge.marsAge()).toEqual(22);
-  // });
+  test('marsAge() returns earthAge * 365 / 687 rounded', () => {
+    const newUserAge = new UserAge("john", 42, 74);
+    expect(newUserAge.marsAge()).toEqual(22);
+  });
 
-  // test('jupiterAge() returns earthAge * 365 / 4300 rounded', () => {
-  //   const newUserAge = new UserAge();
-  //   expect(newUserAge.jupiterAge()).toEqual(3);
-  // });
+  test('jupiterAge() returns earthAge * 365 / 4300 rounded', () => {
+    const newUserAge = new UserAge("john", 42, 74);
+    expect(newUserAge.jupiterAge()).toEqual(3);
+  });
 
 
 });
