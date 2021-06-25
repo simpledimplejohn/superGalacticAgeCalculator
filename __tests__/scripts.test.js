@@ -22,4 +22,9 @@ describe('UserAge', () => {
     const newUserAge = new UserAge();
     expect(newUserAge.venusAge()).toEqual(68);
   });
+
+  test('marsAge() returns earthAge * 365 / 687 rounded', () => {
+    const newUserAge = new UserAge();
+    expect(newUserAge.marsAge()).toEqual(22);
+  });
 });
