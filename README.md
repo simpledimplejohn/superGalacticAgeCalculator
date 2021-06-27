@@ -48,6 +48,31 @@ _simpledimplejohn@gmail.com_
 
 ## Specifications ##
 
+Describe: `UserAge()`
+Test: "should correctly create a user object with three properties"
+Code: `let newUserAge = new UserAge();`
+Expected: `newUserAge = {}`
+
+Describe: `UserAge.prototype.mercuryAge()`
+Test: "mercuryAge() returns change earthAge * 365 / 88 rounded"
+Code: `const newUserAge = new UserAge("john", 42, 74); `
+Expected: `newUserAge = { 174 }`
+
+Describe: `UserAge.prototype.venusAge()`
+Test: "venusAge() returns change earthAge * 365 / 225 rounded"
+Code: `const newUserAge = new UserAge("john", 42, 74); `
+Expected: `newUserAge = { 68 }`
+
+Describe: `UserAge.prototype.marsAge()`
+Test: "marsAge() returns change earthAge * 365 / 687 rounded"
+Code: `const newUserAge = new UserAge("john", 42, 74); `
+Expected: `newUserAge = { 22 }`
+
+Describe: `UserAge.prototype.jupiterAge()`
+Test: "jupiterAge() returns change earthAge * 365 / 4300 rounded"
+Code: `const newUserAge = new UserAge("john", 42, 74); `
+Expected: `newUserAge = { 3 }`
+
 describe('UserAge', () => {
 
   test('should correctly create a user object with three properties', () => {
