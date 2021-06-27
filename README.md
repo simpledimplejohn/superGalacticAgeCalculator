@@ -73,52 +73,22 @@ Test: "jupiterAge() returns change earthAge * 365 / 4300 rounded"
 Code: `const newUserAge = new UserAge("john", 42, 74); `
 Expected: `newUserAge = { 3 }`
 
-describe('UserAge', () => {
+Describe: `UserAge.prototype.mercuryLifeExpect()`
+Test: "mercuryLifeExpect() returns change earthAge * 365 / 88 rounded"
+Code: `const newUserAge = new UserAge("john", 42, 74); `
+Expected: `newUser.mercuryLifeExpect() = { 306 }`
 
-  test('should correctly create a user object with three properties', () => {
+Describe: `UserAge.prototype.venusLifeExpect()`
+Test: "venusLifeExpect() returns change earthAge * 365 / 225 rounded"
+Code: `const newUserAge = new UserAge("john", 42, 74); `
+Expected: `newUser.venusLifeExpect() = { 120 }`
 
-    const newUserAge = new UserAge("john", 42, 74);
-    expect(newUserAge.userName).toEqual("john")
-  });
+Describe: `UserAge.prototype.marsLifeExpect()`
+Test: "marsLifeExpect() returns change earthAge * 365 / 687 rounded"
+Code: `const newUserAge = new UserAge("john", 42, 74); `
+Expected: `newUser.marsLifeExpect() = { 39 }`
 
-  test('mercuryAge() returns change earthAge * 365 / 88 rounded', () => {
-      const newUserAge = new UserAge("john", 42, 74);
-      expect(newUserAge.mercuryAge()).toEqual(174);
-  });
-
-  test('venusAge() returns earthAge * 365 / 225 rounded', () => {
-    const newUserAge = new UserAge("john", 42, 74);
-    expect(newUserAge.venusAge()).toEqual(68);
-  });
-
-  test('marsAge() returns earthAge * 365 / 687 rounded', () => {
-    const newUserAge = new UserAge("john", 42, 74);
-    expect(newUserAge.marsAge()).toEqual(22);
-  });
-
-  test('jupiterAge() returns earthAge * 365 / 4300 rounded', () => {
-    const newUserAge = new UserAge("john", 42, 74);
-    expect(newUserAge.jupiterAge()).toEqual(3);
-  });
-
-  test('mercuryLifeExpect() returns change earthLifeExpect * 365 / 88 rounded', () => {
-    const newUserAge = new UserAge("john", 42, 74);
-    expect(newUserAge.mercuryLifeExpect()).toEqual(306);
-  });
-
-  test('venusLifeExpect() returns change earthLifeExpect * 365 / 225 rounded', () => {
-    const newUserAge = new UserAge("john", 42, 74);
-    expect(newUserAge.venusLifeExpect()).toEqual(120);
-  });
-
-  test('marsLifeExpect() returns change earthLifeExpect * 365 / 687 rounded', () => {
-    const newUserAge = new UserAge("john", 42, 74);
-    expect(newUserAge.marsLifeExpect()).toEqual(39);
-  });
-
-  test('jupiterLifeExpect() returns change earthLifeExpect * 365 / 4300 rounded', () => {
-    const newUserAge = new UserAge("john", 42, 74);
-    expect(newUserAge.jupiterLifeExpect()).toEqual(6);
-  });
-
-});
+Describe: `UserAge.prototype.jupiterLifeExpect()`
+Test: "jupiterLifeExpect() returns change earthAge * 365 / 4300 rounded"
+Code: `const newUserAge = new UserAge("john", 42, 74); `
+Expected: `newUser.jupiterLifeExpect() = { 6 }`
