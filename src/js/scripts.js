@@ -1,14 +1,11 @@
 console.log("scripts!");
-
-
-
 export default class UserAge {
   constructor (userName, age, lifeExpect, planet, habitat) {
     this.userName = userName;
     this.age = age;
     this.lifeExpect = lifeExpect;
-    this.planet = planet
-    this.habitat = habitat
+    this.planet = planet;
+    this.habitat = habitat;
   }
   newPlanetAge () {
     if (this.planet === "mercury") {
@@ -20,7 +17,7 @@ export default class UserAge {
     } else if (this.planet === "jupiter") {
       return this.age * (365/4300);
     } else {
-      return "no data"
+      return "no data";
     }
   }
 
@@ -38,11 +35,9 @@ export default class UserAge {
 
   howOld () {
     if (this.newLifeExpect() > this.age) {
-      return "congradulations to a long and happy life"
+      return "congratulations to a long and happy life";
     } else {
-      return "things don't look well"
+      return "things don't look well";
     }
   }
-
-  
 }
