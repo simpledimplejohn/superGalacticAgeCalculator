@@ -51,4 +51,9 @@ describe('UserAge', () => {
     const newUserAge = new UserAge("john", 42, 74, "jupiter", "");
     expect(newUserAge.newLifeExpect()).toEqual(0);
   });
+
+  test('gives a snarky comment if you are not going to live for very long', () => {
+    const newUserAge = new UserAge("john", 42, 74, "jupiter", "");
+    expect(newUserAge.howOld()).toEqual("things don't look well");
+  });
 });
