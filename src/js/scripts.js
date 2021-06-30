@@ -1,7 +1,3 @@
-console.log("scripts!");
-
-
-
 export default class UserAge {
   constructor (userName, age, lifeExpect, planet, habitat) {
     this.userName = userName;

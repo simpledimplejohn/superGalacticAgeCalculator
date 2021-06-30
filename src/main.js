@@ -1,6 +1,5 @@
 import UserAge from './../src/js/scripts.js'
 
-console.log("main!")
 const newUserAge = new UserAge ("john", 20, 74, "mercury", "outpost");
 
 // UI interface through the console
