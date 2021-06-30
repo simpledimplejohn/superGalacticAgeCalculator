@@ -12,13 +12,13 @@ export default class UserAge {
   }
   newPlanetAge () {
     if (this.planet === "mercury") {
-      return this.age * (365/88);
+      return Math.floor(this.age * (365/88));
     } else if (this.planet === "venus") {
-      return this.age * (365/225);
+      return Math.floor(this.age * (365/225));
     } else if (this.planet === "mars") {
-      return this.age * (365/687);
+      return Math.floor(this.age * (365/687));
     } else if (this.planet === "jupiter") {
-      return this.age * (365/4300);
+      return Math.floor(this.age * (365/4300));
     } else {
       return "no data";
     }
