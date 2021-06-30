@@ -23,4 +23,15 @@ export default class UserAge {
       return "no data";
     }
   }
+  newLifeExpect () {
+    if (this.habitat === "spaceSuit") {
+      return this.lifeExpect / 50;
+    } else if (this.habitat === "outpost") {
+      return this.lifeExpect / 10;
+    } else if (this.habitat === "advanced civilization") {
+      return this.lifeExpect * 10;
+    } else {
+      return this.lifeExpect / 1000;
+    }
+  }
 }
