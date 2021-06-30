@@ -3,9 +3,11 @@ console.log("scripts!");
 
 
 export default class UserAge {
-  constructor (userName, earthAge, earthLifeExpect) {
+  constructor (userName, age, lifeExpect, planet, habitat) {
     this.userName = userName;
-    this.earthAge = earthAge;
-    this.earthLifeExpect = 74;
-    
+    this.age = age;
+    this.lifeExpect = lifeExpect;
+    this.planet = planet;
+    this.habitat = habitat;
+  }
 }
