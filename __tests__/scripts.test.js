@@ -46,4 +46,9 @@ describe('UserAge', () => {
     const newUserAge = new UserAge("john", 42, 74, "jupiter", "advanced civilization");
     expect(newUserAge.newLifeExpect()).toEqual(740);
   });
+
+  test('test how long the user could live with nothing on another planet', () => {
+    const newUserAge = new UserAge("john", 42, 74, "jupiter", "");
+    expect(newUserAge.newLifeExpect()).toEqual(0);
+  });
 });

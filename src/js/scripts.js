@@ -34,4 +34,11 @@ export default class UserAge {
       return Math.floor(this.lifeExpect / 1000);
     }
   }
+  howOld () {
+    if (this.newLifeExpect() > this.age) {
+      return "congratulations to a long and happy life";
+    } else {
+      return "things don't look well";
+    }
+  }
 }
