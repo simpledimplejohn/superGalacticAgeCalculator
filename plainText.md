@@ -4,14 +4,16 @@ Super Galactic Age Calculator
 
 Example
 
-John 
-on earth 42
-on Mercury .24 earth years
-on Venus .62
-on Mars 1.88
-on Jupiter 11.86
+userAge: 
+name: John 
+earth: on earth 42
+mercury: on Mercury .24 earth years
+venus: on Venus .62
+mars: on Mars 1.88
+jupiter: on Jupiter 11.86
 
-2. Calculate lifeExpectancy and return years left to live
+
+2. Calculate lifeExpectancy  based on a range between 0 and 122 return years left to live
     user inputs life expectancy
     or take inputs and calculate a complex life expectancy
 
