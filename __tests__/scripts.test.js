@@ -56,4 +56,9 @@ describe('UserAge', () => {
     const newUserAge = new UserAge("john", 42, 74, "jupiter", "");
     expect(newUserAge.howOld()).toEqual("things don't look well");
   });
+
+  test('congratulates the user if they are going to live a long time', () => {
+    const newUserAge = new UserAge("john", 42, 74, "jupiter", "advanced civilization");
+    expect(newUserAge.howOld()).toEqual("congratulations to a long and happy life");
+  });
 });
