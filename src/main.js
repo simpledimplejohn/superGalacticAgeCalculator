@@ -1,11 +1,14 @@
 import UserAge from './../src/js/scripts.js'
 
 console.log("main!")
-const newUserAge = new UserAge ();
+const newUserAge = new UserAge ("john", 20, 74, "mercury", "outpost");
 
 // UI interface through the console
 
-console.log("For the user named: ", newUserAge.newUser);
-
-console.log('On Earth this person is: ', newUserAge.earthAge, "years old");
-console.log('on earth a person could be expected to live to be ', newUserAge.earthLifeExpect)
+console.log('Find out how long you will live in space');
+console.log("For the user named: ", newUserAge.userName);
+console.log('On Earth this person is: ', newUserAge.age, "years old");
+console.log('on earth a person could be expected to live to be ', newUserAge.lifeExpect);
+console.log('if you lived on', newUserAge.planet,'you would be ', Math.floor(newUserAge.newPlanetAge()), " years old in ", newUserAge.planet, " years");
+console.log('you should be expected to live to be ', newUserAge.newLifeExpect(), "years old living on", newUserAge.planet, "with a", newUserAge.habitat, "for protection");
+console.log("just as an aside ", newUserAge.userName, ", ", newUserAge.howOld());
