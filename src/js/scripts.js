@@ -11,6 +11,8 @@ export default class UserAge {
       return Math.floor(this.age * (365/88));
     } else if (this.planet === "venus") {
       return Math.floor(this.age * (365/225));
+    } else if (this.planet === "mars") {
+      return Math.floor(this.age * (365/687));
     }
   }
 }
