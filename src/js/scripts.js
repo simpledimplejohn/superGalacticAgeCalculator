@@ -15,9 +15,7 @@ export default class UserAge {
       return Math.floor(this.age * (365/687));
     } else if (this.planet === "jupiter") {
       return Math.floor(this.age * (365/4300));
-    } else {
-      return "no data";
-    }
+    } 
   }
   newLifeExpect () {
     if (this.habitat === "spaceSuit") {
