@@ -61,5 +61,9 @@ describe('UserAge', () => {
     expect(newUserAge.howOld()).toEqual(666);
   });
 
+  test('test how many years left to live a user has with a space suit', () => {
+    const newUserAge = new UserAge("john", 42, 74, "jupiter", "space suit");
+    expect(newUserAge.howOld()).toEqual("you died");
+  });
 
 })
