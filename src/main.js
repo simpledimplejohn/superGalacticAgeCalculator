@@ -14,6 +14,6 @@ console.log('on earth a person could be expected to live to be ', newUserAge.lif
 console.log('if you lived on', newUserAge.planet,'you would be ', Math.floor(newUserAge.newPlanetAge()), " years old in ", newUserAge.planet, " years");
 console.log('you should be expected to live ', newUserAge.newLifeExpect(), "more years on ", newUserAge.planet, "with a", newUserAge.habitat, "for protection");
 
-console.log('that means you will live to be:', newUserAge.age + newUserAge.newLifeExpect())
+console.log('that means you will live to be:', newUserAge.yearsLeftToLive())
 
 console.log("just as an aside ", newUserAge.userName, ", ", newUserAge.howOld());

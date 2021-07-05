@@ -28,9 +28,9 @@ export default class UserAge {
       return Math.floor(this.lifeExpect / 1000);
     }
   }
-  // yearsLeftToLive () {
-
-  // }
+  yearsLeftToLive () {
+    this.age = this.age + this.newLifeExpect()
+  }
   howOld () {
     if (this.newLifeExpect() > this.lifeExpect) {
       return this.newLifeExpect() - this.lifeExpect;
