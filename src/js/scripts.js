@@ -31,6 +31,8 @@ export default class UserAge {
   howOld () {
     if (this.newLifeExpect() > this.lifeExpect) {
       return this.newLifeExpect() - this.lifeExpect;
+    } else {
+      return "you died"
     }
   }
 }
