@@ -6,4 +6,7 @@ export default class UserAge {
     this.planet = planet;
     this.habitat = habitat;
   }
+  newPlanetAge () {
+    
+  }
 }
