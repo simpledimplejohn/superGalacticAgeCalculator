@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1625527019943" clover="3.2.0">
-  <project timestamp="1625527019943" name="All files">
-    <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="7" methods="3" coveredmethods="3" elements="24" coveredelements="23" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
+<coverage generated="1625527069919" clover="3.2.0">
+  <project timestamp="1625527069919" name="All files">
+    <metrics statements="15" coveredstatements="15" conditionals="10" coveredconditionals="8" methods="3" coveredmethods="3" elements="28" coveredelements="26" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
     <file name="scripts.js" path="/Users/johnblalock/Desktop/epicodus/intrermed_javascript/superGalacticAgeCalculator/src/js/scripts.js">
-      <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="7" methods="3" coveredmethods="3"/>
+      <metrics statements="15" coveredstatements="15" conditionals="10" coveredconditionals="8" methods="3" coveredmethods="3"/>
       <line num="3" count="7" type="stmt"/>
       <line num="4" count="7" type="stmt"/>
       <line num="5" count="7" type="stmt"/>
@@ -17,6 +17,8 @@
       <line num="15" count="1" type="stmt"/>
       <line num="16" count="1" type="cond" truecount="1" falsecount="1"/>
       <line num="17" count="1" type="stmt"/>
+      <line num="21" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="22" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

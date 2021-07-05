@@ -18,6 +18,8 @@ export default class UserAge {
     } 
   }
   newLifeExpect () {
-    
+    if (this.habitat === "spaceSuit") {
+      return Math.floor(this.lifeExpect / 50);
+    } 
   }
 }
