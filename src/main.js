@@ -1,6 +1,6 @@
 import UserAge from './../src/js/scripts.js'
 
-const newUserAge = new UserAge ("john", 20, 74, "mercury", "outpost");
+const newUserAge = new UserAge ("john", 20, 14, "mercury", "outpost");
 
 // UI interface through the console
 
