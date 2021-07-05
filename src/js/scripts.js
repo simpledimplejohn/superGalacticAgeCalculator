@@ -7,6 +7,8 @@ export default class UserAge {
     this.habitat = habitat;
   }
   newPlanetAge () {
-    
+    if (this.planet === "mercury") {
+      return Math.floor(this.age * (365/88));
+    } 
   }
 }
