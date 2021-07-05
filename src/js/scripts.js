@@ -17,4 +17,7 @@ export default class UserAge {
       return Math.floor(this.age * (365/4300));
     } 
   }
+  newLifeExpect () {
+    
+  }
 }
