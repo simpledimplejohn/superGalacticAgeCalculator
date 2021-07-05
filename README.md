@@ -24,8 +24,12 @@ _This code demonstrates using TDD to build and test a set of methods of properti
 
 * _Clone repository form github_
 * _Navigate to root directory_
-* _in console run 'nmp run build` to build webpack_
-* _run in terminal_
+* _in the console run the following codes:_ 
+  * _`npm install` to install webpack_
+  * _`npm run build` to build webpack_
+  * _`npm run lint` to run esLint_
+  * _`npm run test` to run Jest Tests_
+  * _`npm run start` to run a server_
 
 
 ## Known Bugs and Future Changes
