@@ -32,8 +32,8 @@ export default class UserAge {
 
   // }
   howOld () {
-    if (this.newLifeExpect() > this.age) {
-      return this.newLifeExpect() - this.age;
+    if (this.newLifeExpect() > this.lifeExpect) {
+      return this.newLifeExpect() - this.lifeExpect;
     } else {
       return "things don't look well";
     }
