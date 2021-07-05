@@ -9,6 +9,8 @@ export default class UserAge {
   newPlanetAge () {
     if (this.planet === "mercury") {
       return Math.floor(this.age * (365/88));
-    } 
+    } else if (this.planet === "venus") {
+      return Math.floor(this.age * (365/225));
+    }
   }
 }
