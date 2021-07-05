@@ -22,6 +22,8 @@ export default class UserAge {
       return Math.floor(this.lifeExpect / 50);
     } else if (this.habitat === "outpost") {
       return Math.floor(this.lifeExpect / 10);
-    }
+    } else if (this.habitat === "advanced civilization") {
+      return Math.floor(this.lifeExpect * 10);
+    } 
   }
 }
