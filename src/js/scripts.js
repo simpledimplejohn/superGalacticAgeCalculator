@@ -28,4 +28,6 @@ export default class UserAge {
       return Math.floor(this.lifeExpect / 1000);
     }
   }
+  howOld () {
+  }
 }

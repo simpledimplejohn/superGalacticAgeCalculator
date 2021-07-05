@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1625527069919" clover="3.2.0">
-  <project timestamp="1625527069919" name="All files">
-    <metrics statements="15" coveredstatements="15" conditionals="10" coveredconditionals="8" methods="3" coveredmethods="3" elements="28" coveredelements="26" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
+<coverage generated="1625527582089" clover="3.2.0">
+  <project timestamp="1625527582089" name="All files">
+    <metrics statements="20" coveredstatements="20" conditionals="14" coveredconditionals="13" methods="4" coveredmethods="4" elements="38" coveredelements="37" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1"/>
     <file name="scripts.js" path="/Users/johnblalock/Desktop/epicodus/intrermed_javascript/superGalacticAgeCalculator/src/js/scripts.js">
-      <metrics statements="15" coveredstatements="15" conditionals="10" coveredconditionals="8" methods="3" coveredmethods="3"/>
-      <line num="3" count="7" type="stmt"/>
-      <line num="4" count="7" type="stmt"/>
-      <line num="5" count="7" type="stmt"/>
-      <line num="6" count="7" type="stmt"/>
-      <line num="7" count="7" type="stmt"/>
+      <metrics statements="20" coveredstatements="20" conditionals="14" coveredconditionals="13" methods="4" coveredmethods="4"/>
+      <line num="3" count="11" type="stmt"/>
+      <line num="4" count="11" type="stmt"/>
+      <line num="5" count="11" type="stmt"/>
+      <line num="6" count="11" type="stmt"/>
+      <line num="7" count="11" type="stmt"/>
       <line num="10" count="4" type="cond" truecount="2" falsecount="0"/>
       <line num="11" count="1" type="stmt"/>
       <line num="12" count="3" type="cond" truecount="2" falsecount="0"/>
@@ -17,8 +17,13 @@
       <line num="15" count="1" type="stmt"/>
       <line num="16" count="1" type="cond" truecount="1" falsecount="1"/>
       <line num="17" count="1" type="stmt"/>
-      <line num="21" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="21" count="4" type="cond" truecount="2" falsecount="0"/>
       <line num="22" count="1" type="stmt"/>
+      <line num="23" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

@@ -55,4 +55,11 @@ describe('UserAge', () => {
     const newUserAge = new UserAge("john", 42, 74, "jupiter", "");
     expect(newUserAge.newLifeExpect()).toEqual(0);
   });
+
+  test('test how many years left to live a user has with an advanced civilization', () => {
+    const newUserAge = new UserAge("john", 42, 74, "jupiter", "advanced civilization");
+    expect(newUserAge.howOld()).toEqual(666);
+  });
+
+
 })
