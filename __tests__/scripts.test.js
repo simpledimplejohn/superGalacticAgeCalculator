@@ -35,4 +35,9 @@ describe('UserAge', () => {
     const newUserAge = new UserAge("john", 42, 74, "jupiter", "outpost");
     expect(newUserAge.newPlanetAge()).toEqual(3);
   });
+
+  test('test how long the user could live in a spaceSuit', () => {
+    const newUserAge = new UserAge("john", 42, 74, "jupiter", "spaceSuit");
+    expect(newUserAge.newLifeExpect()).toEqual(1);
+  });
 })
