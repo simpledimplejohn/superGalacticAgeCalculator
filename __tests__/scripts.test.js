@@ -29,4 +29,9 @@ describe('UserAge', () => {
     const newUserAge = new UserAge("john", 42, 74, "mars", "outpost");
     expect(newUserAge.marsAge()).toEqual(22);
   });
+
+  test('6 should return newUserAge.age * (365/4300)', () => {
+    const newUserAge = new UserAge("john", 42, 74, "juipter", "outpost");
+    expect(newUserAge.jupiterAge()).toEqual(3);
+  });
 });
