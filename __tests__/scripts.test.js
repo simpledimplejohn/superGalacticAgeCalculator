@@ -60,4 +60,8 @@ describe('UserAge', () => {
     expect(newUserAge.mercuryYearsLeft()).toEqual(132);
   });
 
+  test('12 should return years left in venus years', () => {
+    const newUserAge = new UserAge("john", 42, 74, "venus", "outpost");
+    expect(newUserAge.venusYearsLeft()).toEqual(52);
+  });
 });

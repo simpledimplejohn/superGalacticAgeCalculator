@@ -33,4 +33,8 @@ export default class UserAge {
   mercuryYearsLeft () {
     return this.mercuryLifeExpect() - this.mercuryAge();
   }
+  venusYearsLeft () {
+
+  }
+  
 }
