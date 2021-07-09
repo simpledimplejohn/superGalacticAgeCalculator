@@ -32,11 +32,7 @@ export default class UserAge {
   }
 
   mercuryYearsLeft () {
-    if (this.mercuryAge() > this.mercuryLifeExpect()) {
-      return this.mercuryAge() - this.mercuryLifeExpect();
-    } else {
-      return "you wont last long";
-    }
+    
   }
 
     

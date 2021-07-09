@@ -55,24 +55,10 @@ describe('UserAge', () => {
     expect(newUserAge.jupiterLifeExpect()).toEqual(6);
   });
 
-  test('11 should return years left in mercury years', () => {
-    const newUserAge = new UserAge("john", 42, 74, "mercury", "outpost");
-    expect(newUserAge.mercuryYearsLeft()).toEqual(132);
-  });
+  test('11 should return mercuryAge - mercuryLifeExpect if greater', () => {
+    const newUserAge = new UserAge("john", 100, 74, "mercury", "outpost");
+    expect(newUserAge.mercuryYearsLeft()).toEqual(108)
+  })
 
-  test('12 should return years left in venus years', () => {
-    const newUserAge = new UserAge("john", 42, 74, "venus", "outpost");
-    expect(newUserAge.venusYearsLeft()).toEqual(52);
-  });
-
-  test('13 should return years left in mars years', () => {
-    const newUserAge = new UserAge("john", 42, 74, "mars", "outpost");
-    expect(newUserAge.marsYearsLeft()).toEqual(17);
-  });
-
-  test('14 should return years left in jupiter years', () => {
-    const newUserAge = new UserAge("john", 42, 74, "jupiter", "outpost");
-    expect(newUserAge.jupiterYearsLeft()).toEqual(3);
-  });
 
 });
