@@ -7,7 +7,6 @@ describe('UserAge', () => {
   });
 
   test('should correctly create a user object with five properties', () => {
-
     const newUserAge = new UserAge("john", 42, 74, "mercury", "outpost");
     expect(newUserAge.userName).toEqual("john")
     expect(newUserAge.age).toEqual(42)
@@ -16,59 +15,9 @@ describe('UserAge', () => {
     expect(newUserAge.habitat).toEqual("outpost")
   });
 
-  test('return 0 if no planet is entered', () => {
-    const newUserAge = new UserAge("john", 42, 74, "", "outpost");
-    expect(newUserAge.newPlanetAge()).toEqual(0);
-  })
-
-  test('return newUserAge.age * (365/88)', () => {
+  test('3 should return newUserAge.age * (365/88)', () => {
     const newUserAge = new UserAge("john", 42, 74, "mercury", "outpost");
-    expect(newUserAge.newPlanetAge()).toEqual(174);
+    expect(newUserAge.mercuryAge()).toEqual(174);
   });
 
-  test('return newUserAge.age * (365/225)', () => {
-    const newUserAge = new UserAge("john", 42, 74, "venus", "outpost");
-    expect(newUserAge.newPlanetAge()).toEqual(68);
-  });
-
-  test('return newUserAge.age * (365/687)', () => {
-    const newUserAge = new UserAge("john", 42, 74, "mars", "outpost");
-    expect(newUserAge.newPlanetAge()).toEqual(22);
-  });
-
-  test('return newUserAge.age * (365/4300)', () => {
-    const newUserAge = new UserAge("john", 42, 74, "jupiter", "outpost");
-    expect(newUserAge.newPlanetAge()).toEqual(3);
-  });
-
-  test('test how long the user could live in a spaceSuit', () => {
-    const newUserAge = new UserAge("john", 42, 74, "jupiter", "spaceSuit");
-    expect(newUserAge.newLifeExpect()).toEqual(1);
-  });
-
-  test('test how long the user could live in an outpost', () => {
-    const newUserAge = new UserAge("john", 42, 74, "jupiter", "outpost");
-    expect(newUserAge.newLifeExpect()).toEqual(7);
-  });
-
-  test('test how long the user could live in an advanced civilization', () => {
-    const newUserAge = new UserAge("john", 42, 74, "jupiter", "advanced civilization");
-    expect(newUserAge.newLifeExpect()).toEqual(740);
-  });
-
-  test('test how long the user could live with nothing on another planet', () => {
-    const newUserAge = new UserAge("john", 42, 74, "jupiter", "");
-    expect(newUserAge.newLifeExpect()).toEqual(0);
-  });
-
-  test('test how many years left to live a user has with an advanced civilization', () => {
-    const newUserAge = new UserAge("john", 42, 74, "jupiter", "advanced civilization");
-    expect(newUserAge.howOld()).toEqual(666);
-  });
-
-  test('test how many years left to live a user has with a space suit', () => {
-    const newUserAge = new UserAge("john", 42, 74, "jupiter", "space suit");
-    expect(newUserAge.howOld()).toEqual("you died");
-  });
-
-})
+});
