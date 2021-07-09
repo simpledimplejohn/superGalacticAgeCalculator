@@ -79,4 +79,9 @@ describe('UserAge', () => {
     const newUserAge = new UserAge("john", 100, 74, "mars", "outpost");
     expect(newUserAge.marsYearsLeft()).toEqual(14)
   })
+
+  test('16 should return marsAge - marsLifeExpect if lesser', () => {
+    const newUserAge = new UserAge("john", 42, 74, "mars", "outpost");
+    expect(newUserAge.marsYearsLeft()).toEqual("you wont last long");
+  })
 });
