@@ -30,16 +30,14 @@ export default class UserAge {
   jupiterLifeExpect () {
     return Math.floor(this.lifeExpect * (365/4300));
   }
+
   mercuryYearsLeft () {
-    return this.mercuryLifeExpect() - this.mercuryAge();
+    if (this.mercuryAge() > this.mercuryLifeExpect()) {
+      return this.mercuryAge() - this.mercuryLifeExpect();
+    } else {
+      return "you wont last long";
+    }
   }
-  venusYearsLeft () {
-    return this.venusLifeExpect() - this.venusAge();
-  }
-  marsYearsLeft () {
-    return this.marsLifeExpect() - this.marsAge();
-  }
-  jupiterYearsLeft () {
-    return this.jupiterLifeExpect() - this.jupiterAge(); 
-  }
+
+    
 }
