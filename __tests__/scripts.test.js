@@ -50,4 +50,8 @@ describe('UserAge', () => {
     expect(newUserAge.marsLifeExpect()).toEqual(39);
   });
 
+  test('10 should return newUserAge.lifeExpect * (365/4300)', () => {
+    const newUserAge = new UserAge("john", 42, 74, "jupiter", "outpost");
+    expect(newUserAge.jupiterLifeExpect()).toEqual(39);
+  });
 });

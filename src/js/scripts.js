@@ -27,4 +27,7 @@ export default class UserAge {
   marsLifeExpect () {
     return Math.floor(this.lifeExpect * (365/687));
   }
+  jupiterLifeExpect () {
+    
+  }
 }
