@@ -28,6 +28,6 @@ export default class UserAge {
     return Math.floor(this.lifeExpect * (365/687));
   }
   jupiterLifeExpect () {
-    
+    return Math.floor(this.lifeExpect * (365/4300));
   }
 }
