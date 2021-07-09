@@ -16,6 +16,11 @@ describe('UserAge', () => {
     expect(newUserAge.habitat).toEqual("outpost")
   });
 
+  test('return 0 if no planet is entered', () => {
+    const newUserAge = new UserAge("john", 42, 74, "", "outpost");
+    expect(newUserAge.newPlanetAge()).toEqual(0);
+  })
+
   test('return newUserAge.age * (365/88)', () => {
     const newUserAge = new UserAge("john", 42, 74, "mercury", "outpost");
     expect(newUserAge.newPlanetAge()).toEqual(174);
