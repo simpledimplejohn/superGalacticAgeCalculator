@@ -18,4 +18,7 @@ export default class UserAge {
   jupiterAge () {
     return Math.floor(this.age * (365/4300));
   }
+  mercuryLifeExpect () {
+    
+  }
 }

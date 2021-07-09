@@ -34,4 +34,10 @@ describe('UserAge', () => {
     const newUserAge = new UserAge("john", 42, 74, "juipter", "outpost");
     expect(newUserAge.jupiterAge()).toEqual(3);
   });
+
+  test('7 should return newUserAge.lifeExpect * (365/88)', () => {
+    const newUserAge = new UserAge("john", 42, 74, "mercury", "outpost");
+    expect(newUserAge.mercuryLifeExpect()).toEqual(68);
+  });
+
 });
