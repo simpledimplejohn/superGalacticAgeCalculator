@@ -13,6 +13,6 @@ export default class UserAge {
     return Math.floor(this.age *(365/225));
   }
   marsAge () {
-    
+    return Math.floor(this.age * (365/687));
   }
 }
