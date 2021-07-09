@@ -31,6 +31,6 @@ export default class UserAge {
     return Math.floor(this.lifeExpect * (365/4300));
   }
   mercuryYearsLeft () {
-  
+    return this.mercuryLifeExpect() - this.mercuryAge();
   }
 }
