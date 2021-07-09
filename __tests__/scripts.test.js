@@ -64,4 +64,9 @@ describe('UserAge', () => {
     const newUserAge = new UserAge("john", 42, 74, "venus", "outpost");
     expect(newUserAge.venusYearsLeft()).toEqual(52);
   });
+
+  test('13 should return years left in mars years', () => {
+    const newUserAge = new UserAge("john", 42, 74, "mars", "outpost");
+    expect(newUserAge.marsYearsLeft()).toEqual(17);
+  });
 });
