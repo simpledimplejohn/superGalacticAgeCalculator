@@ -37,6 +37,7 @@ export default class UserAge {
     return this.venusLifeExpect() - this.venusAge();
   }
   marsYearsLeft () {
+    return this.marsLifeExpect() - this.marsAge();
   }
   
 }
