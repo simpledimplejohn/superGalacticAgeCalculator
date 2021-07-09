@@ -39,5 +39,8 @@ export default class UserAge {
     }
   }
 
+  venusYearsLeft () {
+    
+  }
     
 }

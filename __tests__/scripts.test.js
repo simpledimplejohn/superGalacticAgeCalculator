@@ -60,10 +60,13 @@ describe('UserAge', () => {
     expect(newUserAge.mercuryYearsLeft()).toEqual(108)
   })
 
-  test('11 should return mercuryAge - mercuryLifeExpect if less', () => {
+  test('12 should return mercuryAge - mercuryLifeExpect if less', () => {
     const newUserAge = new UserAge("john", 42, 74, "mercury", "outpost");
     expect(newUserAge.mercuryYearsLeft()).toEqual("you wont last long")
   })
   
-
+  test('13 should return venusAge - venusLifeExpect if greater', () => {
+    const newUserAge = new UserAge("john", 100, 74, "venus", "outpost");
+    expect(newUserAge.venusYearsLeft()).toEqual(108)
+  })
 });
