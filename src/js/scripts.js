@@ -25,6 +25,6 @@ export default class UserAge {
     return Math.floor(this.lifeExpect *(365/225));
   }
   marsLifeExpect () {
-    
+    return Math.floor(this.lifeExpect * (365/687));
   }
 }
