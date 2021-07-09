@@ -19,6 +19,6 @@ export default class UserAge {
     return Math.floor(this.age * (365/4300));
   }
   mercuryLifeExpect () {
-    
+    return Math.floor(this.lifeExpect * (365/88));
   }
 }
