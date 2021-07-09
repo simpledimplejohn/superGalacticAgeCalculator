@@ -12,4 +12,7 @@ export default class UserAge {
   venusAge () {
     return Math.floor(this.age *(365/225));
   }
+  marsAge () {
+    
+  }
 }
