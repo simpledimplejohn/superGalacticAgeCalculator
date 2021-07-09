@@ -42,6 +42,6 @@ describe('UserAge', () => {
 
   test('8 should return newUserAge.lifeExpect * (365/225)', () => {
     const newUserAge = new UserAge("john", 42, 74, "venus", "outpost");
-    expect(newUserAge.venusLifeExpect()).toEqual(306);
+    expect(newUserAge.venusLifeExpect()).toEqual(120);
   });
 });
