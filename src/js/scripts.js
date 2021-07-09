@@ -7,6 +7,6 @@ export default class UserAge {
     this.habitat = habitat;
   }
   mercuryAge () {
-    
+    return Math.floor(this.age * (365/88));
   }
 }
