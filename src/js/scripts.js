@@ -24,4 +24,7 @@ export default class UserAge {
   venusLifeExpect () {
     return Math.floor(this.lifeExpect *(365/225));
   }
+  marsLifeExpect () {
+    
+  }
 }
