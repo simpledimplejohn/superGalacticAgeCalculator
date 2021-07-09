@@ -20,4 +20,9 @@ describe('UserAge', () => {
     expect(newUserAge.mercuryAge()).toEqual(174);
   });
 
+  test('4 should return newUserAge.age * (365/225)', () => {
+    const newUserAge = new UserAge("john", 42, 74, "venus", "outpost");
+    expect(newUserAge.venusAge()).toEqual(68);
+  });
+
 });
