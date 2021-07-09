@@ -40,7 +40,11 @@ export default class UserAge {
   }
 
   venusYearsLeft () {
-    
+    if (this.venusAge() > this.venusLifeExpect()) {
+      return this.venusAge() - this.venusLifeExpect();
+    } else {
+      return "you wont last long";
+    }
   }
     
 }

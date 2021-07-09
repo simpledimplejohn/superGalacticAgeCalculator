@@ -67,6 +67,6 @@ describe('UserAge', () => {
   
   test('13 should return venusAge - venusLifeExpect if greater', () => {
     const newUserAge = new UserAge("john", 100, 74, "venus", "outpost");
-    expect(newUserAge.venusYearsLeft()).toEqual(108)
+    expect(newUserAge.venusYearsLeft()).toEqual(42)
   })
 });
