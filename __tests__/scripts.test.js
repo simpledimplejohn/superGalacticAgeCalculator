@@ -54,4 +54,10 @@ describe('UserAge', () => {
     const newUserAge = new UserAge("john", 42, 74, "jupiter", "outpost");
     expect(newUserAge.jupiterLifeExpect()).toEqual(6);
   });
+
+  test('11 should return years left in mercury years', () => {
+    const newUserAge = new UserAge("john", 42, 74, "mercury", "outpost");
+    expect(newUserAge.mercuryYearsLeft()).toEqual(132);
+  });
+
 });
