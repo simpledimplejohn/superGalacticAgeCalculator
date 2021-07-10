@@ -84,4 +84,9 @@ describe('UserAge', () => {
     const newUserAge = new UserAge("john", 42, 74, "mars", "outpost");
     expect(newUserAge.marsYearsLeft()).toEqual("you wont last long");
   })
+
+  test('17 should return jupiterAge - jupiterLifeExpect if greater', () => {
+    const newUserAge = new UserAge("john", 100, 74, "jupiter", "outpost");
+    expect(newUserAge.jupiterYearsLeft()).toEqual(14)
+  })
 });

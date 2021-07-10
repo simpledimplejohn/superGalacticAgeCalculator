@@ -52,7 +52,10 @@ export default class UserAge {
       return this.marsAge() - this.marsLifeExpect();
     } else {
       return "you wont last long";
-    }
-  
+    }  
+  }
+
+  jupiterYearsLeft () {
+    
   }
 }
