@@ -59,7 +59,7 @@ export default class UserAge {
     if (this.jupiterAge() > this.jupiterLifeExpect()) {
       return this.jupiterAge() - this.jupiterLifeExpect();
     } else {
-      return "you wont last long";
+      return this.jupiterLifeExpect() - this.jupiterAge();
     }  
   }
 }
