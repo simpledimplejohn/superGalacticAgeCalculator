@@ -62,7 +62,7 @@ describe('UserAge', () => {
 
   test('12 should return mercuryAge - mercuryLifeExpect if less', () => {
     const newUserAge = new UserAge("john", 42, 74, "mercury", "outpost");
-    expect(newUserAge.mercuryYearsLeft()).toEqual("you wont last long")
+    expect(newUserAge.mercuryYearsLeft()).toEqual(132)
   })
   
   test('13 should return venusAge - venusLifeExpect if greater', () => {
