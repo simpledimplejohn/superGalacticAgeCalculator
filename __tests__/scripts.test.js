@@ -92,7 +92,7 @@ describe('UserAge', () => {
 
   test('18 should return jupiterAge - jupiterLifeExpect if less', () => {
     const newUserAge = new UserAge("john", 42, 74, "jupiter", "outpost");
-    expect(newUserAge.jupiterYearsLeft()).toEqual("you wont last long")
+    expect(newUserAge.jupiterYearsLeft()).toEqual(3)
   })
 
 
