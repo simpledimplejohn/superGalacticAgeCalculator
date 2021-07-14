@@ -51,7 +51,7 @@ export default class UserAge {
     if (this.marsAge() > this.marsLifeExpect()) {
       return this.marsAge() - this.marsLifeExpect();
     } else {
-      return "you wont last long";
+      return this.marsLifeExpect() - this.marsAge();
     }  
   }
 

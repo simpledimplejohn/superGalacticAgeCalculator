@@ -7,6 +7,6 @@ const newUserAge = new UserAge ("john", 42, 74, "mercury", "advanced civilizatio
 
 
 console.log('Find out how long you will live in space');
-console.log("venus age", newUserAge.venusAge());
-console.log('venusLifeExpect', newUserAge.venusLifeExpect());
-console.log("venus years left", newUserAge.venusYearsLeft());
+console.log("venus age", newUserAge.marsAge());
+console.log('venusLifeExpect', newUserAge.marsLifeExpect());
+console.log("venus years left", newUserAge.marsYearsLeft());
